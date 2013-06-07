@@ -6,13 +6,17 @@ import util.Random
 class JsonCreator {
 
   def create(noOfDeviceTokens: Int) {
-    println("{\n  \"messages\": [\n      {\n        \"deviceType\": \"android\", \n        \"deviceTokens\": [")
+
+    val startJsonString: String = "{\n  \"messages\": [\n      {\n        \"deviceType\": \"android\", \n        \"deviceTokens\": ["
+    val endJsonString: String = " ],\n      \"message\": \"hello to google user testing!123\"\n    }\n  ],\n  \"sourceAddress\": \"O2 Moments\"\n}"
+
+    println(startJsonString)
 
     (1 to noOfDeviceTokens) foreach {
       times: Int =>
         generateRandomTokenAndAppendItToOutput
     }
-    println(" ],\n      \"message\": \"hello to google user testing!123\"\n    }\n  ],\n  \"sourceAddress\": \"O2 Moments\"\n}")
+    println(endJsonString)
 
   }
 
