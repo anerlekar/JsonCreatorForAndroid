@@ -19,7 +19,7 @@ class JsonCreator {
   def generateRandomTokenAndAppendItToOutput() {
     val randomlyGeneratedDeviceToken = new StringBuilder()
 
-    randomlyGeneratedDeviceToken.append("\"")
+    randomlyGeneratedDeviceToken.append("          \"")
 
     (1 to 162) foreach {
       times: Int =>

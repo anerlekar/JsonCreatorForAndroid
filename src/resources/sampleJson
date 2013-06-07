@@ -1,0 +1,15 @@
+{
+  "messages": [
+    {
+        "deviceType": "android",
+        "deviceTokens": [
+        "APA91bEt_EYW4zayAepwuC2Hh8iHaQLjHRNu7Q0ZDlQITQoM2YhhTPSxQVlgzt0tbGpEA8mRoVCpV7UO1h6Y3hpFWe8yM3dlBWNFiT18_2oS9dxhYsJLLr-8SXfF9MojNUYogH5LjshuMYD3uTtrF72Lho3pD39akg",
+        "APA91bEqLKnq0svG-9FeUbiboWHD5oRX7X5SCpE79I-9f2Uk61OC2GGPVauduO7h3LSmlJaxdHMdOF8-_Z8jkTX3OgG1WB8Suzub_k_AA_yaSsWBiI2iyYD1xPtkXZSbYNY9_PhZlWJP_USFx_QNH49wR0-Pc75j5Q",
+        "APA91bHpPg5OHGQswCT3FMv4MkdEbm2J2WEzuf69HlMljPvi_7htN3dlaZXCYReGGwDvtnoxw_TsaX0mY63x_htxdFrPvlWbnxUhIEKtbARAjCrbSXueIk6W66dw6zUBvEaSufZf4hSa_XQu5WpfzzYYmKy8OPFZyA",
+        "invalid android device token"
+      ],
+      "message": "hello to google user testing!123"
+    }
+  ],
+  "sourceAddress": "O2 Moments"
+}
