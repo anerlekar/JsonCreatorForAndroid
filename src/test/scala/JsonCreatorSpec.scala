@@ -5,13 +5,14 @@ import org.junit.Test
 class JsonCreatorSpec {
 
   @Test
-  def itCreatesJsonInAFile() {
+  def itCreatesJsonsWithSpecifiedNumberOfDeviceTokens() {
 
-    val noOfdeviceToken: Int = 2
+    val noOfDeviceTokenPerJson: Int = 2
+    val noOfJson: Int = 1
 
     val jsonCreator = new JsonCreator
 
-    jsonCreator.create(noOfdeviceToken)
+    jsonCreator.create(noOfDeviceTokenPerJson, noOfJson)
 
   }
 }

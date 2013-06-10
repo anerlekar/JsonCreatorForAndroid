@@ -5,22 +5,24 @@ import util.Random
 
 class JsonCreator {
 
-  def create(noOfDeviceTokens: Int) {
+  val startJsonString: String = "{\n  \"messages\": [\n      {\n        \"deviceType\": \"android\", \n        \"deviceTokens\": ["
+  val endJsonString: String = " ],\n      \"message\": \"hello to google user testing!123\"\n    }\n  ],\n  \"sourceAddress\": \"O2 Moments\"\n}"
 
-    val startJsonString: String = "{\n  \"messages\": [\n      {\n        \"deviceType\": \"android\", \n        \"deviceTokens\": ["
-    val endJsonString: String = " ],\n      \"message\": \"hello to google user testing!123\"\n    }\n  ],\n  \"sourceAddress\": \"O2 Moments\"\n}"
+  def create(noOfDeviceTokensPerJson: Int, noOfJson: Int) {
+    (1 to noOfJson) foreach {
+      json =>
+        println(startJsonString)
 
-    println(startJsonString)
+        (1 to noOfDeviceTokensPerJson) foreach {
+          times: Int =>
+            generateRandomDeviceTokenAndAppendItToJson
+        }
 
-    (1 to noOfDeviceTokens) foreach {
-      times: Int =>
-        generateRandomTokenAndAppendItToOutput
+        println(endJsonString)
     }
-    println(endJsonString)
-
   }
 
-  def generateRandomTokenAndAppendItToOutput() {
+  def generateRandomDeviceTokenAndAppendItToJson() {
     val randomlyGeneratedDeviceToken = new StringBuilder()
 
     randomlyGeneratedDeviceToken.append("          \"")
